@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+
+    <h1>Currecy Changer </h1>
+  INR:  <input oninput="inp()" type="number" placeholder="Enter INR" id="i">
+  <br><br>  
+ Doller <input oninput="dlr()" type="number" placeholder="Enter Doller" id="d">
+
+
+    <script>
+        function inp(){
+            let a = parseFloat(document.getElementById('i').value)
+            
+            document.getElementById('d').value = a/84.51
+        }
+
+
+        function dlr(){
+            let b = parseFloat(document.getElementById('d').value)
+            
+            document.getElementById('i').value = b*84.51
+        }
+    </script>
+
+
+
+
+</body>
+</html>
